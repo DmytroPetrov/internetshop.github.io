@@ -1,0 +1,69 @@
+.main {
+  background-color: whitesmoke;
+}
+
+.article {
+  background-color: whitesmoke;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.photo-container,
+.desciption,
+.behaviour,
+.price {
+  display: block;
+  width: 70%;
+}
+
+.price {
+  background-color: lightgray;
+  color: green;
+}
+
+.price p {
+  font-weight: bold;
+}
+
+.amount-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.amount {
+  display: block;
+  margin: 5px;
+}
+
+.plus,
+.minus {
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  width: 15vw;
+  height: 5vh;
+}
+
+.plus {
+  background-color: greenyellow;
+}
+
+.minus {
+  background-color: red;
+}
+/*# sourceMappingURL=article.css.map */
