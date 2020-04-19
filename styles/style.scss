@@ -1,6 +1,6 @@
 $content_padding: 100px;
 $color_orange: rgb(255, 180, 45);
-$color_orange_light: rgb(255, 200, 155)
+$color_orange_light: rgb(255, 200, 155);
 
 html,body {
     margin: 0;
@@ -17,6 +17,23 @@ body {
 .header {
     background-color: $color_orange;
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.user-nav {
+    display: block;
+    padding-top: 20px;
+}
+
+.user-nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.user-nav a:hover{
+    background-color: $color_orange_light;
 }
 
 .main {

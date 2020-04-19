@@ -18,6 +18,30 @@ body {
 .header {
   background-color: #ffb42d;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.user-nav {
+  display: block;
+  padding-top: 20px;
+}
+
+.user-nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.user-nav a:hover {
+  background-color: #ffc89b;
 }
 
 .main {
@@ -83,9 +107,7 @@ body {
 }
 
 .item:hover {
-  border-color: #ffc85f;
-  background-color: #ffc85f;
-  lighting-color: #ffc85f;
+  border-color: #ffc89b;
 }
 
 .footer {
