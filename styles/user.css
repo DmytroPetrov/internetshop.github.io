@@ -29,16 +29,51 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper__menu-ul li {
+  padding: 6px;
 }
 
 .wrapper__menu-ul li a {
+  padding: 6px;
   color: black;
   text-decoration: none;
   display: block;
   background-color: grey;
+  -webkit-box-shadow: 0px 8px 12px 5px rgba(248, 166, 12, 0.2);
+          box-shadow: 0px 8px 12px 5px rgba(248, 166, 12, 0.2);
 }
 
 .wrapper__menu-ul li a:hover {
   background-color: #ffb42d;
+}
+
+.buttons-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 6px;
+}
+
+.buttons-block button {
+  border: 1px solid #a59d9d;
+  border-radius: 1px;
+  font-size: 20px;
+  padding: 5px 15px 5px 15px;
+  color: white;
+}
+
+.buttons-block .btn-submin {
+  background-color: #08cc08;
+}
+
+.buttons-block .btn-delete {
+  background-color: red;
 }
 /*# sourceMappingURL=user.css.map */
