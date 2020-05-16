@@ -73,7 +73,15 @@
   background-color: #08cc08;
 }
 
+.buttons-block .btn-submin:hover {
+  background-color: #7ce696;
+}
+
 .buttons-block .btn-delete {
   background-color: red;
+}
+
+.buttons-block .btn-delete:hover {
+  background-color: #f87373;
 }
 /*# sourceMappingURL=user.css.map */

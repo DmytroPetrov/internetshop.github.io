@@ -61,9 +61,17 @@ $color_orange_light: rgb(255, 200, 155);
     & .btn-submin {
        
         background-color: rgb(8, 204, 8);
+
+        &:hover {
+            background-color:rgb(124, 230, 150);;
+        }
     }
 
     & .btn-delete {
         background-color: red;
+
+        &:hover {
+            background-color: rgb(248, 115, 115);
+        }
     }
 }
