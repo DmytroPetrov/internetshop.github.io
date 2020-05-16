@@ -14,6 +14,22 @@
           justify-content: center;
 }
 
+.article .back-link {
+  display: block;
+  width: 70%;
+  background-color: seashell;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.article .back-link a {
+  padding-left: 50px;
+  text-decoration: none;
+  color: #d87a00;
+}
+
 .photo-container,
 .desciption,
 .behaviour,

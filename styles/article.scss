@@ -8,9 +8,24 @@ $color_orange_light: rgb(255, 200, 155);
 .article {
     background-color: whitesmoke;
     display: flex;
-    //flex-direction: column;
+    //  flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
+
+    & .back-link {
+        display: block;
+        width: 70%;
+        background-color: seashell;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        margin-top: 20px;
+        margin-bottom: 20px;;
+
+        & a {
+            padding-left: 50px;
+            text-decoration: none;
+            color: rgb(216, 122, 0);
+        }
+    }
 }
 
 .photo-container, 
