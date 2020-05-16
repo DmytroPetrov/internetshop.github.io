@@ -123,14 +123,21 @@ body {
     //justify-content: center;
 }
 
+$square-side: 150px;
+
 .item {
     background-color: lightyellow;
-    width: 150px;
-    height: 150px;
+    width: $square-side;
+    height: $square-side;
     border: 2px solid;
     margin: 8px;
     padding: 0px;
     overflow: hidden;
+
+    & img {
+        width: $square-side;
+        height: $square-side;
+    }
 }
 
 .item:hover {

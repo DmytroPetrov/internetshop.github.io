@@ -152,6 +152,11 @@ body {
   overflow: hidden;
 }
 
+.item img {
+  width: 150px;
+  height: 150px;
+}
+
 .item:hover {
   border-color: #ffc89b;
 }
