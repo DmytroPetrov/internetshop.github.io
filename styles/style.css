@@ -28,6 +28,8 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-shadow: 8px 8px 16px -8px black;
+          box-shadow: 8px 8px 16px -8px black;
 }
 
 .header .user-nav {
@@ -117,6 +119,15 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.menu-ul ul {
+  list-style: none;
+  padding-left: 15px;
+}
+
+.menu-ul ul li:hover {
+  background-color: #ffc89b;
 }
 
 .menu-ul li a {

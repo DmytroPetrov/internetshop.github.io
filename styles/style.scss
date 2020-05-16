@@ -20,6 +20,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    box-shadow: 8px 8px 16px -8px black;
 
     & .user-nav {
         padding-right: 40px;
@@ -101,6 +102,15 @@ body {
     padding: 0px;
     display: flex;
     flex-direction: column;
+
+    & ul {
+        list-style: none;
+        padding-left: 15px;
+
+        & li:hover {
+            background-color: $color_orange_light;
+        }
+    }
 }
 
 .menu-ul li a {
