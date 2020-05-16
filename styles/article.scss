@@ -66,12 +66,16 @@ $color_orange_light: rgb(255, 200, 155);
 
 .price {
     display: flex;
-    color: green;
+    
     box-shadow: 0px 8px 17px 5px rgba(102, 99, 92, 0.2);
     flex-direction: column;
+    padding-left: 5px;
+    border-left: $color_orange solid 3px;
 }
 
 .price p {
+    padding-left: 15px;
+    color: rgb(25, 15, 15);
     font-weight: bold;
 }
 
@@ -88,8 +92,9 @@ $color_orange_light: rgb(255, 200, 155);
     margin: 5px;
 }
 
-.plus, 
-.minus {
+.plus,
+.btn-delay, 
+.btn-compare {
     padding: 5px;
     border: none;
     color: white;
@@ -98,12 +103,27 @@ $color_orange_light: rgb(255, 200, 155);
     font-weight: bold;
     width: 15vw;
     height: 5vh;
+
+    & img {
+        width: 20px;
+    }
+
+    transition: 0.2s;
 }
 
 .plus {
     background-color: greenyellow;
+    
+    &:hover {
+        background-color: rgb(207, 250, 142);
+    }
+    
 }
 
-.minus {
-    background-color: red;
+.btn-delay,
+.btn-compare {
+    
+    &:hover {
+        background-color: $color_orange;
+    }
 }
