@@ -110,6 +110,8 @@ body {
 
 .menu h3 {
   display: block;
+  -webkit-transform: rotate(-270deg);
+          transform: rotate(-270deg);
 }
 
 .menu .menu-ul {
