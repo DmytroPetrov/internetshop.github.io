@@ -30,6 +30,42 @@ body {
           justify-content: space-between;
 }
 
+.header .user-nav {
+  padding-right: 40px;
+}
+
+.header .user-nav a:hover {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transform: translateX(-10px);
+          transform: translateX(-10px);
+}
+
+.header .user-nav a:hover ~ .user-nav__content {
+  display: block;
+}
+
+.header .user-nav .user-nav__content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.header .user-nav .user-nav__content:hover {
+  display: block;
+}
+
+.header .user-nav .user-nav__content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
 .header a {
   text-decoration: none;
   color: black;
