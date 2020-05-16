@@ -103,12 +103,14 @@ $color_orange_light: rgb(255, 200, 155);
     font-weight: bold;
     width: 15vw;
     height: 5vh;
-
+    border-radius: 2px;
+    transition: 0.2s;
+    
     & img {
         width: 20px;
     }
 
-    transition: 0.2s;
+    
 }
 
 .plus {
