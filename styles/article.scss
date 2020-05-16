@@ -15,8 +15,6 @@ $color_orange_light: rgb(255, 200, 155);
     & .back-link {
         display: block;
         width: 70%;
-        background-color: seashell;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         margin-top: 20px;
         margin-bottom: 20px;;
 
@@ -24,6 +22,36 @@ $color_orange_light: rgb(255, 200, 155);
             padding-left: 50px;
             text-decoration: none;
             color: rgb(216, 122, 0);
+        }
+
+        & span, span::before, span::after {
+            display: block;
+            background-color: black;
+            width: 20px;
+            height: 3px;
+            transform: translateY(13px);
+        }
+
+        & span {
+           // transform: 10px;
+           width: 35px;
+        }
+
+        & span {
+            
+            transition: 0.5s;
+
+            &::after, &::before {
+                content: '';
+            }
+
+            &::before {
+                transform: translateY(-5px) rotate(-30deg);
+            }
+
+            &::after {
+                transform: translateY(3px) rotate(30deg);
+            }
         }
     }
 }
@@ -37,9 +65,10 @@ $color_orange_light: rgb(255, 200, 155);
 }
 
 .price {
-    background-color: lightgray;
+    display: flex;
     color: green;
     box-shadow: 0px 8px 17px 5px rgba(102, 99, 92, 0.2);
+    flex-direction: column;
 }
 
 .price p {
@@ -50,7 +79,8 @@ $color_orange_light: rgb(255, 200, 155);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    
+    justify-content: space-between;
+    padding: 5px;
 }
 
 .amount {
@@ -60,6 +90,7 @@ $color_orange_light: rgb(255, 200, 155);
 
 .plus, 
 .minus {
+    padding: 5px;
     border: none;
     color: white;
     text-align: center;
